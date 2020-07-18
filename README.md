@@ -2,6 +2,8 @@
 
 This repository contains the code for the Rulebox.io website. (https://rulebox.io)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cc1dc3d9-cdc8-4d9a-b8c0-93620c2e6ce5/deploy-status)](https://app.netlify.com/sites/rulebox-web/deploys)
+
 It is built using:
 * Nuxt (on top of VueJS)
 * Nuxt\content (GIT-based headless CMS)
