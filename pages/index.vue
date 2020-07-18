@@ -1,16 +1,22 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
       <h1 class="title">
         Rulebox.io
       </h1>
+      <CButton as="nuxt-link" to="/">
+        ⚡️ Oh, my Nuxt!
+      </CButton>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import { CButton } from '@chakra-ui/vue'
+
+export default {
+  components: { CButton }
+}
 </script>
 
 <style>

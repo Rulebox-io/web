@@ -53,7 +53,9 @@ export default {
   */
   modules: [
     // Doc: https://github.com/nuxt/content
-    '@nuxt/content'
+    '@nuxt/content',
+    '@chakra-ui/nuxt',
+    '@nuxtjs/emotion'
   ],
   /*
   ** Content module configuration
@@ -65,5 +67,13 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
-  }
+  },
+
+  chakra: {
+    extendTheme: {
+      colors: {
+        brand: { /* ... */ }
+      }
+    }
+  }  
 }
