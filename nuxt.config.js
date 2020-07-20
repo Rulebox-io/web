@@ -29,6 +29,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/scss/main.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -57,23 +58,47 @@ export default {
     '@chakra-ui/nuxt',
     '@nuxtjs/emotion'
   ],
+
+  chakra: {
+
+    extendTheme: {
+      colors: {
+        special: "#ff0",
+        brand: {
+          jade: {
+             50: "#00b16a",
+            100: "#00b16a",
+            200: "#00b16a",
+            300: "#00b16a",
+            400: "#00b16a",
+            500: "#00b16a",
+            600: "#00b16a",
+            700: "#00b16a",
+            800: "#00b16a",
+            900: "#00b16a"
+          }
+        }
+      },
+      container: ['100%', '480px', '768px', '992px'],
+      breakpoints: ["30em", "48em", "62em", "80em"],
+      fonts: {
+        logo: 'Nova Round',
+        myheading: '"Avenir Next", sans-serif',
+        body: 'system-ui, sans-serif',
+        mono: 'Menlo, monospace'
+      }
+    }  
+  },
+
   /*
   ** Content module configuration
   ** See https://content.nuxtjs.org/configuration
   */
-  content: {},
-  /*
-  ** Build configuration
-  ** See https://nuxtjs.org/api/configuration-build/
-  */
-  build: {
-  },
-
-  chakra: {
-    extendTheme: {
-      colors: {
-        brand: { /* ... */ }
-      }
-    }
-  }  
+ content: {},
+ /*
+ ** Build configuration
+ ** See https://nuxtjs.org/api/configuration-build/
+ */
+ build: {
+ },   
 }

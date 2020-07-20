@@ -10,11 +10,12 @@
     "generate": "nuxt build && nuxt export",
     "export": "nuxt export",
     "serve": "nuxt serve",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:js": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm run lint:js"
   },
   "dependencies": {
     "@chakra-ui/nuxt": "0.0.7",
+    "@chakra-ui/vue": "^0.6.0",
     "@nuxt/content": "^1.3.2",
     "@nuxtjs/emotion": "0.0.1",
     "nuxt": "^2.13.0"
@@ -24,6 +25,8 @@
     "@nuxtjs/eslint-module": "^2.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.2.0",
-    "eslint-plugin-nuxt": "^1.0.0"
+    "eslint-plugin-nuxt": "^1.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.2"
   }
 }

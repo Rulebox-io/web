@@ -1,49 +1,32 @@
 <template>
-  <div class="container">
-    <div>
-      <h1 class="title">
-        Rulebox.io
-      </h1>
-      <CButton as="nuxt-link" to="/">
-        ⚡️ Oh, my Nuxt!
-      </CButton>
-    </div>
-  </div>
+  <section>
+    <CBox :width="$chakra.theme.container" mx="auto">
+      <CSimpleGrid :columns="[1, 1, 2]" spacing="4">
+        <CBox>
+          <CHeading as="h1" font-family="heading" size="2xl" mb="8">
+            Awesome H1 headline to capture
+          </CHeading>
+          <CHeading size="lg" font-weight="400" color="gray.600">
+            An H2 explanation of how it's so good
+            and what it can do.
+          </CHeading>
+        </CBox>
+        <CBox background-color="#63b257" height="200px">
+
+        </CBox>
+      </CSimpleGrid>
+    </CBox>
+  </section>
 </template>
 
 <script>
-import { CButton } from '@chakra-ui/vue'
+import { CBox, CHeading, CSimpleGrid } from '@chakra-ui/vue'
 
 export default {
-  components: { CButton }
+  components: { CBox, CHeading, CSimpleGrid }
 }
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
 </style>
