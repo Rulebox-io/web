@@ -6,15 +6,20 @@
         <CFlex align="center" justify="space-between" direction="row" px="1" py="4">
             <CHeading as="h2" font-family="logo" color="gray.600">rulebox</CHeading>
             <div>
-              <CBox as="span" mx="1">About</CBox>
-              <CBox as="span" mx="1">Developers</CBox>
-              <CBox as="span" mx="1">Pricing</CBox>
+              <CBox as="span" mx="1" fontWeight="semibold">About</CBox>
+              <CBox as="span" mx="1" fontWeight="semibold">Developers</CBox>
+              <CBox as="span" mx="1" fontWeight="semibold">Pricing</CBox>
             </div>
           <CButton right-icon="arrow-forward" rounded="full" variant-color="brand.jade" color="white">Sign in</CButton>
         </CFlex>
       </CBox>
     </nav>
     <Nuxt />
+    <CBox as="footer">
+      <CBox bg="white" :width="$chakra.theme.container" mx="auto" pt="4">
+        &copy; 2020 Rulebox.io
+      </CBox>
+    </CBox>
   </CThemeProvider>
 </template>
 
@@ -30,9 +35,6 @@ export default {
     CHeading,
     CThemeProvider,
     CReset
-  },
-  mounted () {
-    console.log(this.$chakra.theme.colors.blue)
   }
 }
 </script>
