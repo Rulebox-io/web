@@ -1,6 +1,6 @@
-## RuleboxSyntax
+## Rulebox Syntax
 
-#### Equality test
+### Equality test
 
 ```json
 { "<field name>": <primitive> }
@@ -13,7 +13,7 @@ Examples
 
 Generates: `@code` `"E"` `/eq`
 
-#### Greater-than, less-than, etc
+### Greater-than, less-than, etc
 
 ```json
 { "<field name>": { "$gt|$lt|$gte|$lte": <primitive> } }
@@ -28,7 +28,7 @@ Examples
 
 Generates: `@from` `22` `/gt`
 
-#### Logical AND
+### Logical AND
 
 ```json
 { "<field name>": <expression>, "<field name>": <expression> [, ...] }
@@ -43,7 +43,7 @@ Example
 
 Generates: `@from` `7` `/gt` `@from` `22` `/lte` `/and`
 
-#### Logical OR
+### Logical OR
 
 ```json
 { "$or": [ <expression> [, <expression> ] ]}
@@ -60,7 +60,7 @@ Example
 
 Generates: `@code` `"E"` `/eq` `@code` `"L"` `/eq` `/or`
 
-#### Between
+### Between
 This expression tests whether a field value is between two specified values (inclusive).
 ```json
 { "<field name>": { "$between": [<number>, <number>] } }
@@ -73,7 +73,7 @@ Examples
 Generates: `@from` `20` `/gte` `@from` `22` `/lte` `/and`
 
 
-#### Is one of
+### Is one of
 This expression tests whether a field value is one of the values in an array.
 ```json
 { "<field name>": { "$in": [<primitive>, <primitive>] } }
@@ -85,7 +85,7 @@ Examples
 
 Generates: `["E", "L", "LD"]` `@code` `/contains`
 
-#### Contains
+### Contains
 This expression is the inverse of 'is one of' - it tests whether a field's array value contains a specified value. For this to work, the field value must be an array.
 This expression tests whether a primitive value is one of the values in a field's array.
 ```json
@@ -98,7 +98,7 @@ Examples
 
 Generates: `@tags` `"Sick"` `/contains`
 
-#### 'not' - inversion
+### 'not' - inversion
 The 'not' expression returns the inverse of a boolean result.
 ```json
 { "$not": <boolean_expression> }
@@ -110,7 +110,7 @@ Examples
 
 Generates: `@code` `"E"` `/eq` `/not`
 
-#### Contains any, all, or none
+### Contains any, all, or none
 These operators test whether some, or all, or none of the elements in a field array match a specified predicate.
 ```json
 { "<field name>": { "$any|$all|$none": <predicate_object> } }
@@ -123,7 +123,7 @@ Examples
 
 Generates: `@tags` `/begin-predicate` `@code` `["Sick", "C/L"]` `/in` `/end-predicate` `/any`
 
-#### Matching a sub-entity
+### Matching a sub-entity
 Entities may contain entities as field values. Matching fields of sub-entities is done via entity matching:
 ```json
 { "<entity field name>": <predicate_object> }
