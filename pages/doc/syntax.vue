@@ -13,7 +13,7 @@ export default {
   components: { CBox },
 
   async asyncData ({ $content, params }) {
-    const doc = await $content('syntax').fetch()
+    const doc = await $content('doc/syntax').fetch()
 
     return { doc }
   }
