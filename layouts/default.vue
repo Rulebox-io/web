@@ -15,25 +15,55 @@
       ></div>
     </div>
 
-    <div class="absolute w-full flex justify-center">
-      <svg class="w-96 h-96" viewBox="0 0 1000 1000">
+    <div class="absolute w-full flex justify-center circles-container">
+      <svg class="circles" viewBox="0 0 1800 1800">
         <circle
           stroke="white"
           fill="none"
-          stroke-opacity="0.5"
-          cx="500"
-          cy="500"
+          stroke-opacity="0.2"
+          cx="900"
+          cy="900"
+          r="250"
+        />
+        <circle
+          stroke="white"
+          fill="none"
+          stroke-opacity="0.2"
+          cx="900"
+          cy="900"
+          r="375"
+        />
+        <circle
+          stroke="white"
+          fill="none"
+          stroke-opacity="0.2"
+          cx="900"
+          cy="900"
           r="500"
         />
-      </svg>
-      <svg class="w-96 h-96" viewBox="0 0 1000 1000">
         <circle
           stroke="white"
           fill="none"
-          stroke-opacity="0.5"
-          cx="500"
-          cy="250"
-          r="250"
+          stroke-opacity="0.2"
+          cx="900"
+          cy="900"
+          r="625"
+        />
+        <circle
+          stroke="white"
+          fill="none"
+          stroke-opacity="0.2"
+          cx="900"
+          cy="900"
+          r="750"
+        />
+        <circle
+          stroke="white"
+          fill="none"
+          stroke-opacity="0.2"
+          cx="900"
+          cy="900"
+          r="875"
         />
       </svg>
     </div>
@@ -41,7 +71,10 @@
     <header
       class="relative flex justify-between max-w-7xl ml-auto mr-auto py-8"
     >
-      <span class="text-white text-xl font-bold">Rulebox</span>
+      <span class="text-white text-xl font-bold flex items-center">
+        <RuleboxTransparentLogo class="w-7 h-7"></RuleboxTransparentLogo>
+        Rulebox
+      </span>
       <span class="flex items-center space-x-12">
         <span class="text-white text-sm">Changelog</span>
         <span class="text-white text-sm">About us</span>
@@ -66,8 +99,10 @@
   </div>
 </template>
 <script>
+import RuleboxTransparentLogo from '@/components/icons/RuleboxTransparentLogo.vue'
+
 export default {
-  components: {},
+  components: { RuleboxTransparentLogo },
   data() {
     return {}
   },
@@ -101,5 +136,12 @@ html {
 
 .top-blur {
   filter: blur(100px);
+}
+.circles-container {
+  top: -90px;
+}
+.circles {
+  width: 900px;
+  height: 900px;
 }
 </style>
