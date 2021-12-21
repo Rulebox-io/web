@@ -2,16 +2,7 @@
   <div>
     <div class="absolute w-full flex h-32">
       <div
-        class="
-          w-full
-          flex-grow
-          bg-gradient-to-r
-          from-hero-100
-          via-hero-500
-          to-hero-900
-          h-32
-          top-blur
-        "
+        class="w-full flex-grow bg-gradient-to-r from-hero-100 via-hero-500 to-hero-900 h-32 top-blur"
       ></div>
     </div>
 
@@ -81,16 +72,7 @@
         <span class="text-white text-sm">We're hiring</span>
       </span>
       <button
-        class="
-          text-white
-          py-1
-          px-6
-          border
-          text-sm
-          rounded-full
-          bg-white bg-opacity-10
-          border-opacity-50
-        "
+        class="text-white py-1 px-6 border text-sm rounded-full bg-white bg-opacity-10 border-opacity-50"
       >
         Login
       </button>
