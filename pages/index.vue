@@ -1,11 +1,11 @@
 <template>
   <main>
     <div class="relative max-w-7xl ml-auto mr-auto text-center mt-44">
-      <h1 class="text-6xl text-white font-bold my-2">
+      <h1 class="lg:text-6xl text-4xl text-white font-bold my-2">
         Rule management<br />
         for your whole team.
       </h1>
-      <h2 class="text-xl text-gray-200 my-4">
+      <h2 class="lg:text-xl text-md text-gray-200 my-4">
         Create, maintain and run rulesets with a<br />
         single user-friendly interface.
       </h2>
@@ -21,14 +21,14 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              <span class="text-gray-100 pr-6">
-                <input class="bg-black border-none flex-grow" type="text" 
+              <span class="text-gray-100 pr-2 lg:pr-4">
+                <input class="bg-black border-none flex-grow leading-relaxed" type="text" 
                   placeholder="hello@rulebox.io">
                 </input>
               </span>
             </span>
             <span
-              class="text-indigo-400 pl-6 group-hover:text-gray-100 hover:cursor-pointer transition duration-200">Register
+              class="text-indigo-400 pl-2 lg:pl-4 group-hover:text-gray-100 hover:cursor-pointer transition duration-200">Register
               &rarr;</span>
           </div>
         </div>

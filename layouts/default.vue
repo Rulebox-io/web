@@ -60,13 +60,13 @@
     </div>
 
     <header
-      class="relative flex justify-between max-w-7xl ml-auto mr-auto py-8"
+      class="relative flex justify-between max-w-7xl ml-auto mr-auto py-8 px-4"
     >
       <span class="text-white text-xl font-bold flex items-center">
         <RuleboxTransparentLogo class="w-7 h-7"></RuleboxTransparentLogo>
         Rulebox
       </span>
-      <span class="flex items-center space-x-12">
+      <span class="md:flex items-center space-x-12 hidden">
         <span class="text-white text-sm">Changelog</span>
         <span class="text-white text-sm">About us</span>
         <span class="text-white text-sm">We're hiring</span>
