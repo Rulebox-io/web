@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="relative max-w-7xl ml-auto mr-auto text-center mt-44">
-      <h1 class="lg:text-6xl text-4xl text-white font-bold my-2">
+      <h1 class="lg:text-[56px] text-3xl text-white font-bold my-2 leading-none">
         Rule management<br />
         for your whole team.
       </h1>
@@ -29,7 +29,7 @@
             </span>
             <nuxt-link to="#">
             <span
-              class="text-indigo-400 pl-2 lg:pl-4 group-hover:text-gray-100 hover:cursor-pointer transition duration-200">Register
+              class="text-indigo-400 pl-2 lg:pl-4 group-hover:text-gray-100 hover:cursor-not-allowed transition duration-200">Register
               &rarr;</span>
               </nuxt-link>
           </div>

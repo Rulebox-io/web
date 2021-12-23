@@ -76,7 +76,7 @@
     </div>
 
     <header
-      class="relative flex justify-between max-w-7xl ml-auto mr-auto py-8 px-4"
+      class="relative flex justify-between max-w-6xl ml-auto mr-auto py-8 px-4"
     >
       <nuxt-link to="#">
         <span class="text-white text-xl font-bold flex items-center">
@@ -84,7 +84,7 @@
           Rulebox
         </span>
       </nuxt-link>
-      <span class="md:flex items-center space-x-12 hidden">
+      <!-- <span class="md:flex items-center space-x-12 hidden">
         <nuxt-link to="#">
           <span class="text-white text-sm">Changelog</span>
         </nuxt-link>
@@ -94,23 +94,38 @@
         <nuxt-link to="#">
           <span class="text-white text-sm">We're hiring</span>
         </nuxt-link>
-      </span>
-      <nuxt-link to="#">
+      </span> -->
+      <a href="#" class="text-gray-400 hover:text-gray-500">
+        <span class="sr-only">Twitter</span>
+        <svg
+          class="h-6 w-6"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+          />
+        </svg>
+      </a>
+      <!-- <nuxt-link to="#">
         <button
           class="text-white py-1 px-6 border text-sm rounded-full bg-white bg-opacity-10 border-opacity-50"
         >
           Login
         </button>
-      </nuxt-link>
+      </nuxt-link> -->
     </header>
     <nuxt />
+    <Footer />
   </div>
 </template>
 <script>
 import RuleboxTransparentLogo from '@/components/icons/RuleboxTransparentLogo.vue'
+import Footer from '@/components/icons/Footer.vue'
 
 export default {
-  components: { RuleboxTransparentLogo },
+  components: { RuleboxTransparentLogo, Footer },
   data() {
     return {}
   },
@@ -146,7 +161,7 @@ html {
   filter: blur(100px);
 }
 .circles-container {
-  top: -90px;
+  top: -120px;
 }
 .circles {
   width: 900px;

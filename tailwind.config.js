@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -35,6 +36,9 @@ module.exports = {
       background: theme('colors'),
     }),
     extend: {
+      fontFamily: {
+        sans: ['Untitled Sans', ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         rulebox: {
           '50': '#f9fafb',
@@ -82,6 +86,41 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-dark-mode')(),
-    require('tailwindcss-border-gradient-radius')
+    require('tailwindcss-border-gradient-radius'),
+    function ({
+      addBase
+    }) {
+      addBase([{
+          '@font-face': {
+            fontFamily: 'Untitled Sans',
+            fontWeight: '100 900',
+            fontStyle: 'normal',
+            fontNamedInstance: 'Regular',
+            fontDisplay: 'swap',
+            src: 'url("/fonts/UntitledSans-Regular.woff2?3.13") format("woff2")',
+          },
+        },
+        {
+          '@font-face': {
+            fontFamily: 'Untitled Sans',
+            fontWeight: '100 900',
+            fontStyle: 'italic',
+            fontNamedInstance: 'Italic',
+            fontDisplay: 'swap',
+            src: 'url("/fonts/UntitledSans-RegularItalic.woff2?3.13") format("woff2")',
+          },
+        },
+        {
+          '@font-face': {
+            fontFamily: 'Untitled Sans',
+            fontWeight: '100 900',
+            fontStyle: 'bold',
+            fontNamedInstance: 'Bold',
+            fontDisplay: 'swap',
+            src: 'url("/fonts/UntitledSans-Bold.woff2?3.13") format("woff2")',
+          },
+        },
+      ])
+    },
   ],
 }
