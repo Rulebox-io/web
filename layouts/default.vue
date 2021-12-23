@@ -6,7 +6,9 @@
       ></div>
     </div>
 
-    <div class="absolute w-full flex justify-center circles-container">
+    <div
+      class="absolute w-full flex justify-center circles-container transform animate-circle"
+    >
       <svg class="circles" viewBox="0 0 1800 1800">
         <circle
           stroke="white"
@@ -16,6 +18,12 @@
           cy="900"
           r="852"
         />
+      </svg>
+    </div>
+    <div
+      class="absolute w-full flex justify-center circles-container transform animate-circle2"
+    >
+      <svg class="circles" viewBox="0 0 1800 1800">
         <circle
           stroke="white"
           fill="none"
@@ -24,6 +32,12 @@
           cy="900"
           r="756"
         />
+      </svg>
+    </div>
+    <div
+      class="absolute w-full flex justify-center circles-container transform animate-circle3"
+    >
+      <svg class="circles" viewBox="0 0 1800 1800">
         <circle
           stroke="white"
           fill="none"
@@ -32,6 +46,12 @@
           cy="900"
           r="660"
         />
+      </svg>
+    </div>
+    <div
+      class="absolute w-full flex justify-center circles-container transform animate-circle4"
+    >
+      <svg class="circles" viewBox="0 0 1800 1800">
         <circle
           stroke="white"
           fill="none"
@@ -40,6 +60,12 @@
           cy="900"
           r="568"
         />
+      </svg>
+    </div>
+    <div
+      class="absolute w-full flex justify-center circles-container transform animate-circle5"
+    >
+      <svg class="circles" viewBox="0 0 1800 1800">
         <circle
           stroke="white"
           fill="none"
@@ -48,6 +74,12 @@
           cy="900"
           r="472"
         />
+      </svg>
+    </div>
+    <div
+      class="absolute w-full flex justify-center circles-container transform animate-circle6"
+    >
+      <svg class="circles" viewBox="0 0 1800 1800">
         <circle
           stroke="white"
           fill="none"
@@ -56,6 +88,12 @@
           cy="900"
           r="378"
         />
+      </svg>
+    </div>
+    <div
+      class="absolute w-full flex justify-center circles-container transform animate-circle7"
+    >
+      <svg class="circles" viewBox="0 0 1800 1800">
         <circle
           stroke="white"
           fill="none"
@@ -64,6 +102,12 @@
           cy="900"
           r="280"
         />
+      </svg>
+    </div>
+    <div
+      class="absolute w-full flex justify-center circles-container transform animate-circle8"
+    >
+      <svg class="circles" viewBox="0 0 1800 1800">
         <circle
           stroke="white"
           fill="none"

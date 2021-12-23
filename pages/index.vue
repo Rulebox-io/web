@@ -1,7 +1,7 @@
 <template>
   <main>
-    <div class="relative max-w-7xl ml-auto mr-auto text-center mt-44">
-      <h1 class="lg:text-[56px] text-3xl text-white font-bold my-2 leading-none">
+    <div class="relative max-w-7xl ml-auto mr-auto text-center mt-24 md:mt-44">
+      <h1 class="lg:text-5xl md:text-4xl text-3xl text-white font-bold my-2 leading-none">
         Rule management<br />
         for your whole team.
       </h1>
@@ -12,7 +12,7 @@
       <div class="flex justify-around mt-12">
         <div class="relative group">
           <div
-            class="absolute -inset-0.5 bg-gradient-to-r from-purple-700 to-blue-500 rounded-lg blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt">
+            class="absolute -inset-0.5 bg-gradient-to-r from-purple-700 to-blue-500 rounded-lg blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-500 animate-tilt">
           </div>
           <div class="relative px-6 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600 border border-gray-600 opacity-75">
             <span class="flex items-center space-x-2">

@@ -66,7 +66,15 @@ module.exports = {
         gray: colors.trueGray
       },
       animation: {
-        tilt: 'tilt 10s infinite linear'
+        tilt: 'tilt 10s infinite linear',
+        circle: 'circle 40s linear',
+        circle2: 'circle2 40s linear',
+        circle3: 'circle3 40s linear',
+        circle4: 'circle4 40s linear',
+        circle5: 'circle5 40s linear',
+        circle6: 'circle6 40s linear',
+        circle7: 'circle7 40s linear',
+        circle8: 'circle8 40s linear'
       },
       keyframes: {
         tilt: {
@@ -80,6 +88,94 @@ module.exports = {
             transform: "rotate(-1deg)",
           }
         },
+        circle: {
+          "0%": {
+            transform: "translate(0px, 560px)",
+          },
+          "6%": {
+            transform: "translate(0px, 560px)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px)",
+          }
+        },
+        circle2: {
+          "0%": {
+            transform: "translate(0px, -1230px)",
+          },
+          "10%": {
+            transform: "translate(0px, -1230px)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px)",
+          }
+        },
+        circle3: {
+          "0%": {
+            transform: "translate(0px, 240px)",
+          },
+          "14%": {
+            transform: "translate(0px, 240px)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px)",
+          }
+        },
+        circle4: {
+          "0%": {
+            transform: "translate(0px, -720px)",
+          },
+          "9%": {
+            transform: "translate(0px, -720px)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px)",
+          }
+        },
+        circle5: {
+          "0%": {
+            transform: "translate(0px, -480px)",
+          },
+          "5%": {
+            transform: "translate(0px, -480px)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px)",
+          }
+        },
+        circle6: {
+          "0%": {
+            transform: "translate(0px, 980px)",
+          },
+          "12%": {
+            transform: "translate(0px, 980px)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px)",
+          }
+        },
+        circle7: {
+          "0%": {
+            transform: "translate(0px, 480px)",
+          },
+          "7%": {
+            transform: "translate(0px, 480px)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px)",
+          }
+        },
+        circle8: {
+          "0%": {
+            transform: "translate(0px, -120px)",
+          },
+          "20%": {
+            transform: "translate(0px, -120px)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px)",
+          }
+        }
       },
       backgroundImage: theme => ({})
     }
