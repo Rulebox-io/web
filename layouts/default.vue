@@ -2,7 +2,7 @@
   <div>
     <div class="absolute w-full flex h-32">
       <div
-        class="w-full flex-grow bg-gradient-to-r from-hero-100 via-hero-500 to-hero-900 h-32 top-blur"
+        class="w-full flex-grow bg-gradient-to-r from-hero-100 via-hero-500 to-hero-900 h-32 top-blur opacity-60"
       ></div>
     </div>
 
@@ -14,7 +14,7 @@
           stroke-opacity="0.2"
           cx="900"
           cy="900"
-          r="250"
+          r="852"
         />
         <circle
           stroke="white"
@@ -22,7 +22,7 @@
           stroke-opacity="0.2"
           cx="900"
           cy="900"
-          r="375"
+          r="756"
         />
         <circle
           stroke="white"
@@ -30,7 +30,7 @@
           stroke-opacity="0.2"
           cx="900"
           cy="900"
-          r="500"
+          r="660"
         />
         <circle
           stroke="white"
@@ -38,7 +38,7 @@
           stroke-opacity="0.2"
           cx="900"
           cy="900"
-          r="625"
+          r="568"
         />
         <circle
           stroke="white"
@@ -46,7 +46,7 @@
           stroke-opacity="0.2"
           cx="900"
           cy="900"
-          r="750"
+          r="472"
         />
         <circle
           stroke="white"
@@ -54,7 +54,23 @@
           stroke-opacity="0.2"
           cx="900"
           cy="900"
-          r="875"
+          r="378"
+        />
+        <circle
+          stroke="white"
+          fill="none"
+          stroke-opacity="0.2"
+          cx="900"
+          cy="900"
+          r="280"
+        />
+        <circle
+          stroke="white"
+          fill="none"
+          stroke-opacity="0.2"
+          cx="900"
+          cy="900"
+          r="188"
         />
       </svg>
     </div>
@@ -62,20 +78,30 @@
     <header
       class="relative flex justify-between max-w-7xl ml-auto mr-auto py-8 px-4"
     >
-      <span class="text-white text-xl font-bold flex items-center">
-        <RuleboxTransparentLogo class="w-7 h-7"></RuleboxTransparentLogo>
-        Rulebox
-      </span>
+      <nuxt-link to="#">
+        <span class="text-white text-xl font-bold flex items-center">
+          <RuleboxTransparentLogo class="w-7 h-7"></RuleboxTransparentLogo>
+          Rulebox
+        </span>
+      </nuxt-link>
       <span class="md:flex items-center space-x-12 hidden">
-        <span class="text-white text-sm">Changelog</span>
-        <span class="text-white text-sm">About us</span>
-        <span class="text-white text-sm">We're hiring</span>
+        <nuxt-link to="#">
+          <span class="text-white text-sm">Changelog</span>
+        </nuxt-link>
+        <nuxt-link to="#">
+          <span class="text-white text-sm">About us</span>
+        </nuxt-link>
+        <nuxt-link to="#">
+          <span class="text-white text-sm">We're hiring</span>
+        </nuxt-link>
       </span>
-      <button
-        class="text-white py-1 px-6 border text-sm rounded-full bg-white bg-opacity-10 border-opacity-50"
-      >
-        Login
-      </button>
+      <nuxt-link to="#">
+        <button
+          class="text-white py-1 px-6 border text-sm rounded-full bg-white bg-opacity-10 border-opacity-50"
+        >
+          Login
+        </button>
+      </nuxt-link>
     </header>
     <nuxt />
   </div>

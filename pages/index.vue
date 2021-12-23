@@ -27,9 +27,11 @@
                 </input>
               </span>
             </span>
+            <nuxt-link to="#">
             <span
               class="text-indigo-400 pl-2 lg:pl-4 group-hover:text-gray-100 hover:cursor-pointer transition duration-200">Register
               &rarr;</span>
+              </nuxt-link>
           </div>
         </div>
       </div>
