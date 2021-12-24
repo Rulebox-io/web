@@ -2,30 +2,12 @@
   <div class="relative">
     <div class="absolute w-full flex h-32">
       <div
-        class="
-          w-full
-          flex-grow
-          bg-gradient-to-r
-          from-hero-100
-          via-hero-500
-          to-hero-900
-          h-32
-          top-blur
-          opacity-60
-        "
+        class="w-full flex-grow bg-gradient-to-r from-hero-100 via-hero-500 to-hero-900 h-32 top-blur opacity-60"
       ></div>
     </div>
 
     <div
-      class="
-        absolute
-        w-full
-        flex
-        justify-center
-        circles-container
-        transform
-        animate-circle
-      "
+      class="absolute w-full flex justify-center circles-container transform animate-circle"
     >
       <svg class="circles" viewBox="0 0 1800 1800">
         <circle
@@ -39,15 +21,7 @@
       </svg>
     </div>
     <div
-      class="
-        absolute
-        w-full
-        flex
-        justify-center
-        circles-container
-        transform
-        animate-circle2
-      "
+      class="absolute w-full flex justify-center circles-container transform animate-circle2"
     >
       <svg class="circles" viewBox="0 0 1800 1800">
         <circle
@@ -61,15 +35,7 @@
       </svg>
     </div>
     <div
-      class="
-        absolute
-        w-full
-        flex
-        justify-center
-        circles-container
-        transform
-        animate-circle3
-      "
+      class="absolute w-full flex justify-center circles-container transform animate-circle3"
     >
       <svg class="circles" viewBox="0 0 1800 1800">
         <circle
@@ -83,15 +49,7 @@
       </svg>
     </div>
     <div
-      class="
-        absolute
-        w-full
-        flex
-        justify-center
-        circles-container
-        transform
-        animate-circle4
-      "
+      class="absolute w-full flex justify-center circles-container transform animate-circle4"
     >
       <svg class="circles" viewBox="0 0 1800 1800">
         <circle
@@ -105,15 +63,7 @@
       </svg>
     </div>
     <div
-      class="
-        absolute
-        w-full
-        flex
-        justify-center
-        circles-container
-        transform
-        animate-circle5
-      "
+      class="absolute w-full flex justify-center circles-container transform animate-circle5"
     >
       <svg class="circles" viewBox="0 0 1800 1800">
         <circle
@@ -127,15 +77,7 @@
       </svg>
     </div>
     <div
-      class="
-        absolute
-        w-full
-        flex
-        justify-center
-        circles-container
-        transform
-        animate-circle6
-      "
+      class="absolute w-full flex justify-center circles-container transform animate-circle6"
     >
       <svg class="circles" viewBox="0 0 1800 1800">
         <circle
@@ -149,15 +91,7 @@
       </svg>
     </div>
     <div
-      class="
-        absolute
-        w-full
-        flex
-        justify-center
-        circles-container
-        transform
-        animate-circle7
-      "
+      class="absolute w-full flex justify-center circles-container transform animate-circle7"
     >
       <svg class="circles" viewBox="0 0 1800 1800">
         <circle
@@ -171,15 +105,7 @@
       </svg>
     </div>
     <div
-      class="
-        absolute
-        w-full
-        flex
-        justify-center
-        circles-container
-        transform
-        animate-circle8
-      "
+      class="absolute w-full flex justify-center circles-container transform animate-circle8"
     >
       <svg class="circles" viewBox="0 0 1800 1800">
         <circle
@@ -196,10 +122,14 @@
     <header
       class="relative flex justify-between max-w-6xl ml-auto mr-auto py-8 px-4"
     >
-      <span class="text-white text-xl font-bold flex items-center">
-        <RuleboxTransparentLogo class="w-7 h-7"></RuleboxTransparentLogo>
-        Rulebox
-      </span>
+      <nuxt-link to="/">
+        <span
+          class="text-white text-xl font-bold flex items-center select-none"
+        >
+          <RuleboxTransparentLogo class="w-7 h-7"></RuleboxTransparentLogo>
+          Rulebox
+        </span>
+      </nuxt-link>
       <!-- <span class="md:flex items-center space-x-12 hidden">
         <nuxt-link to="#">
           <span class="text-white text-sm">Changelog</span>
@@ -211,7 +141,11 @@
           <span class="text-white text-sm">We're hiring</span>
         </nuxt-link>
       </span> -->
-      <a href="#" class="text-gray-400 hover:text-gray-100">
+      <a
+        href="https://twitter.com/rulebox_io"
+        target="_blank"
+        class="text-gray-400 hover:text-gray-100"
+      >
         <span class="sr-only">Twitter</span>
         <Twitter></Twitter>
       </a>
@@ -246,18 +180,6 @@ export default {
 }
 </script>
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
