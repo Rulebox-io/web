@@ -1,5 +1,7 @@
 # web
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cc1dc3d9-cdc8-4d9a-b8c0-93620c2e6ce5/deploy-status)](https://app.netlify.com/sites/rulebox-web/deploys)
+
 ## Build Setup
 
 ```bash
