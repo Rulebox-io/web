@@ -12,11 +12,14 @@
       <div class="flex justify-around mt-12">
         <div class="relative group">
           <div
-            class="absolute -inset-0.5 bg-gradient-to-r from-purple-700 to-blue-500 rounded-lg blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-500 animate-tilt">
+            class="absolute -inset-1 bg-gradient-to-r from-purple-700 to-blue-500 rounded-lg blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-500 animate-glow">
           </div>
-          <div class="relative px-6 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600 border border-gray-600 opacity-75">
+          <div
+            class="absolute -inset-0.5 bg-gradient-to-r from-purple-700 to-blue-500 rounded-lg opacity-50">
+          </div>
+          <div class="relative px-6 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600 opacity-75">
             <span class="flex items-center space-x-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-100" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

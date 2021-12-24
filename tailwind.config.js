@@ -66,114 +66,186 @@ module.exports = {
         gray: colors.trueGray
       },
       animation: {
-        tilt: 'tilt 10s infinite linear',
-        circle: 'circle 40s linear',
-        circle2: 'circle2 40s linear',
-        circle3: 'circle3 40s linear',
-        circle4: 'circle4 40s linear',
-        circle5: 'circle5 40s linear',
-        circle6: 'circle6 40s linear',
-        circle7: 'circle7 40s linear',
-        circle8: 'circle8 40s linear'
+        glow: 'glow 5s infinite linear',
+        circle: 'circle 60s infinite linear',
+        circle2: 'circle2 60s infinite linear',
+        circle3: 'circle3 60s infinite linear',
+        circle4: 'circle4 60s infinite linear',
+        circle5: 'circle5 60s infinite linear',
+        circle6: 'circle6 60s infinite linear',
+        circle7: 'circle7 60s infinite linear',
+        circle8: 'circle8 60s infinite linear'
       },
       keyframes: {
-        tilt: {
-          "0%, 50%, 100%": {
-            transform: "rotate(0deg)",
+        glow: {
+          "0%, 100%": {
+            transform: "scale(1)",
           },
           "25%": {
-            transform: "rotate(1deg)",
+            transform: "scale(1.05)",
           },
           "75%": {
-            transform: "rotate(-1deg)",
+            transform: "scale(0.99)",
           }
         },
         circle: {
           "0%": {
-            transform: "translate(0px, 560px)",
+            transform: "translate(0px, 56px)",
           },
-          "6%": {
-            transform: "translate(0px, 560px)",
+          "1%": {
+            transform: "translate(0px, 56px)",
+          },
+          "40%": {
+            transform: "translate(0px, 0px)",
+          },
+          "60%": {
+            transform: "translate(0px, 0px)",
+          },
+          "91%": {
+            transform: "translate(0px, 56px)",
           },
           "100%": {
-            transform: "translate(0px, 0px)",
+            transform: "translate(0px, 56px)",
           }
         },
         circle2: {
           "0%": {
-            transform: "translate(0px, -1230px)",
+            transform: "translate(0px, -123px)",
           },
-          "10%": {
-            transform: "translate(0px, -1230px)",
+          "1%": {
+            transform: "translate(0px, -123px)",
+          },
+          "40%": {
+            transform: "translate(0px, 0px)",
+          },
+          "60%": {
+            transform: "translate(0px, 0px)",
+          },
+          "91%": {
+            transform: "translate(0px, -123px)",
           },
           "100%": {
-            transform: "translate(0px, 0px)",
+            transform: "translate(0px, -123px)",
           }
         },
         circle3: {
           "0%": {
             transform: "translate(0px, 240px)",
           },
-          "14%": {
+          "1%": {
+            transform: "translate(0px, 240px)",
+          },
+          "40%": {
+            transform: "translate(0px, 0px)",
+          },
+          "60%": {
+            transform: "translate(0px, 0px)",
+          },
+          "91%": {
             transform: "translate(0px, 240px)",
           },
           "100%": {
-            transform: "translate(0px, 0px)",
+            transform: "translate(0px, 240px)",
           }
         },
         circle4: {
           "0%": {
             transform: "translate(0px, -720px)",
           },
-          "9%": {
+          "1%": {
+            transform: "translate(0px, -720px)",
+          },
+          "40%": {
+            transform: "translate(0px, 0px)",
+          },
+          "60%": {
+            transform: "translate(0px, 0px)",
+          },
+          "91%": {
             transform: "translate(0px, -720px)",
           },
           "100%": {
-            transform: "translate(0px, 0px)",
+            transform: "translate(0px, -720px)",
           }
         },
         circle5: {
           "0%": {
-            transform: "translate(0px, -480px)",
+            transform: "translate(0px, 480px)",
           },
-          "5%": {
-            transform: "translate(0px, -480px)",
+          "1%": {
+            transform: "translate(0px, 480px)",
+          },
+          "40%": {
+            transform: "translate(0px, 0px)",
+          },
+          "60%": {
+            transform: "translate(0px, 0px)",
+          },
+          "91%": {
+            transform: "translate(0px, 480px)",
           },
           "100%": {
-            transform: "translate(0px, 0px)",
+            transform: "translate(0px, 480px)",
           }
         },
         circle6: {
           "0%": {
             transform: "translate(0px, 980px)",
           },
-          "12%": {
+          "1%": {
+            transform: "translate(0px, 980px)",
+          },
+          "40%": {
+            transform: "translate(0px, 0px)",
+          },
+          "60%": {
+            transform: "translate(0px, 0px)",
+          },
+          "91%": {
             transform: "translate(0px, 980px)",
           },
           "100%": {
-            transform: "translate(0px, 0px)",
+            transform: "translate(0px, 980px)",
           }
         },
         circle7: {
           "0%": {
-            transform: "translate(0px, 480px)",
+            transform: "translate(0px, -480px)",
           },
-          "7%": {
-            transform: "translate(0px, 480px)",
+          "1%": {
+            transform: "translate(0px, -480px)",
+          },
+          "40%": {
+            transform: "translate(0px, 0px)",
+          },
+          "60%": {
+            transform: "translate(0px, 0px)",
+          },
+          "91%": {
+            transform: "translate(0px, -480px)",
           },
           "100%": {
-            transform: "translate(0px, 0px)",
+            transform: "translate(0px, -480px)",
           }
         },
         circle8: {
           "0%": {
             transform: "translate(0px, -120px)",
           },
-          "20%": {
+          "1%": {
+            transform: "translate(0px, -120px)",
+          },
+          "40%": {
+            transform: "translate(0px, 0px)",
+          },
+          "60%": {
+            transform: "translate(0px, 0px)",
+          },
+          "91%": {
             transform: "translate(0px, -120px)",
           },
           "100%": {
-            transform: "translate(0px, 0px)",
+            transform: "translate(0px, -120px)",
           }
         }
       },
