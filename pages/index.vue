@@ -25,16 +25,14 @@
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               <span class="text-gray-100 pr-2 lg:pr-4">
-                <input class="bg-black border-none flex-grow leading-relaxed" type="text" 
+                <input ref="register" class="bg-black border-none flex-grow leading-relaxed outline-none" type="text" 
                   placeholder="hello@rulebox.io">
                 </input>
               </span>
             </span>
-            <nuxt-link to="#">
-            <span
-              class="text-indigo-400 pl-2 lg:pl-4 group-hover:text-gray-100 hover:cursor-not-allowed transition duration-200">Register
-              &rarr;</span>
-              </nuxt-link>
+            <button
+              class="text-indigo-400 pl-2 lg:pl-4 group-hover:text-gray-100 focus-within:text-gray-100 outline-none hover:cursor-not-allowed transition duration-200">Register
+              &rarr;</button>
           </div>
         </div>
       </div>
@@ -46,15 +44,22 @@
 </template>
 
 <script>
-  export default {}
-
+export default {
+  mounted() {
+    this.focusInput()
+  },
+  methods: {
+    focusInput() {
+      this.$refs.register.focus()
+    },
+  },
+}
 </script>
 <style scoped>
-  .border-gradient-r-purple-green-gray-900 {
-    background: linear-gradient(to right, #18181b, #18181b),
-      linear-gradient(to right, #6b00ef, #09dcff);
-    background-clip: padding-box, border-box;
-    background-origin: padding-box, border-box;
-  }
-
+.border-gradient-r-purple-green-gray-900 {
+  background: linear-gradient(to right, #18181b, #18181b),
+    linear-gradient(to right, #6b00ef, #09dcff);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
 </style>
