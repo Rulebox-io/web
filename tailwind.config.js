@@ -159,32 +159,32 @@ module.exports = {
     }) {
       addBase([{
           '@font-face': {
-            fontFamily: 'Untitled Sans',
+            fontFamily: 'UntitledSans',
             fontWeight: '100 900',
             fontStyle: 'normal',
             fontNamedInstance: 'Regular',
             fontDisplay: 'swap',
-            src: 'url("/fonts/UntitledSans-Regular.woff2?3.13") format("woff2")',
+            src: 'url("/fonts/UntitledSans-Regular.woff2") format("woff2")',
           },
         },
         {
           '@font-face': {
-            fontFamily: 'Untitled Sans',
+            fontFamily: 'UntitledSans',
             fontWeight: '100 900',
             fontStyle: 'italic',
             fontNamedInstance: 'Italic',
             fontDisplay: 'swap',
-            src: 'url("/fonts/UntitledSans-RegularItalic.woff2?3.13") format("woff2")',
+            src: 'url("/fonts/UntitledSans-RegularItalic.woff2") format("woff2")',
           },
         },
         {
           '@font-face': {
-            fontFamily: 'Untitled Sans',
+            fontFamily: 'UntitledSans',
             fontWeight: '100 900',
             fontStyle: 'bold',
             fontNamedInstance: 'Bold',
             fontDisplay: 'swap',
-            src: 'url("/fonts/UntitledSans-Bold.woff2?3.13") format("woff2")',
+            src: 'url("/fonts/UntitledSans-Bold.woff2") format("woff2")',
           },
         },
       ])

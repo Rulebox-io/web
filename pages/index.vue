@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="relative max-w-7xl ml-auto mr-auto text-center mt-24 md:mt-44">
+    <div class="relative max-w-7xl ml-auto mr-auto text-center mt-24 md:mt-32">
       <h1 class="lg:text-6xl md:text-4xl text-3xl text-white font-bold my-2 leading-none select-none">
         Rule management<br />
         for your whole team.
@@ -12,12 +12,12 @@
       <div class="flex justify-around mt-12">
         <div class="relative group">
           <div
-            class="absolute -inset-1 bg-gradient-to-r from-purple-700 to-cyan-400 rounded-lg blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-500 animate-glow">
+            class="absolute -inset-1 bg-gradient-to-r from-purple-700 to-cyan-400 rounded-lg blur-lg opacity-75 group-hover:opacity-100 group-hover:blur-md transition duration-1000 group-hover:duration-500 animate-glow">
           </div>
           <div
-            class="absolute -inset-0.5 bg-gradient-to-r from-purple-700 to-cyan-400 rounded-lg opacity-50">
+            class="absolute -inset-0.5 bg-gradient-to-r from-purple-700 to-cyan-400 rounded-lg opacity-100 group-hover:opacity-50 transition duration-1000 group-hover:duration-500">
           </div>
-          <div class="relative px-6 py-4 bg-black rounded-lg leading-none flex items-center opacity-75 text-lg">
+          <div class="relative px-5 py-2.5 bg-black rounded-lg leading-none flex items-center opacity-75 text-lg">
             <span class="flex items-center space-x-2">
               <span class="text-gray-100 pr-2 lg:pr-4">
                 <input ref="register" class="bg-black border-none flex-grow leading-relaxed outline-none" type="text" 
