@@ -19,10 +19,14 @@
     <header
       class="relative flex justify-between max-w-6xl ml-auto mr-auto py-8 px-4"
     >
-      <span class="text-white text-xl font-bold flex items-center">
-        <RuleboxTransparentLogo class="w-7 h-7"></RuleboxTransparentLogo>
-        Rulebox
-      </span>
+      <nuxt-link to="/">
+        <span
+          class="text-white text-xl font-bold flex items-center select-none"
+        >
+          <RuleboxTransparentLogo class="w-7 h-7"></RuleboxTransparentLogo>
+          Rulebox
+        </span>
+      </nuxt-link>
       <!-- <span class="md:flex items-center space-x-12 hidden">
         <nuxt-link to="#">
           <span class="text-white text-sm">Changelog</span>
@@ -34,7 +38,11 @@
           <span class="text-white text-sm">We're hiring</span>
         </nuxt-link>
       </span> -->
-      <a href="#" class="text-gray-400 hover:text-gray-100">
+      <a
+        href="https://twitter.com/rulebox_io"
+        target="_blank"
+        class="text-gray-400 hover:text-gray-100"
+      >
         <span class="sr-only">Twitter</span>
         <Twitter></Twitter>
       </a>

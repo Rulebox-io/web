@@ -18,7 +18,7 @@ export default {
     {
       hid: 'description',
       name: 'description',
-      content: ''
+      content: 'Rule management, for your whole team. Register now for Beta access.'
     },
     {
       name: 'format-detection',

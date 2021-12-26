@@ -64,13 +64,11 @@ module.exports = {
         violet: {
           '500': '#6B00EF'
         },
-        cyan: {
-          '500': '#09DCFF',
-        },
+        cyan: colors.cyan,
         gray: colors.trueGray
       },
       animation: {
-        glow: 'glow 5s infinite linear',
+        glow: 'glow 10s infinite linear',
         circle: 'circle 60s infinite linear',
         circle2: 'circle2 60s infinite linear',
         circle3: 'circle3 60s infinite linear',
@@ -85,171 +83,72 @@ module.exports = {
           "0%, 100%": {
             transform: "scale(1)",
           },
-          "25%": {
+          "50%": {
             transform: "scale(1.05)",
-          },
-          "75%": {
-            transform: "scale(0.99)",
           }
         },
         circle: {
-          "0%": {
-            transform: "translate(0px, 56px)",
+          "0%, 1%, 91%, 100%": {
+            transform: "translate(0px, -75px)",
           },
-          "1%": {
-            transform: "translate(0px, 56px)",
-          },
-          "40%": {
+          "40%, 60%": {
             transform: "translate(0px, 0px)",
-          },
-          "60%": {
-            transform: "translate(0px, 0px)",
-          },
-          "91%": {
-            transform: "translate(0px, 56px)",
-          },
-          "100%": {
-            transform: "translate(0px, 56px)",
           }
         },
         circle2: {
-          "0%": {
-            transform: "translate(0px, -123px)",
+          "0%, 1%, 91%, 100%": {
+            transform: "translate(0px, -35px)",
           },
-          "1%": {
-            transform: "translate(0px, -123px)",
-          },
-          "40%": {
+          "40%, 60%": {
             transform: "translate(0px, 0px)",
-          },
-          "60%": {
-            transform: "translate(0px, 0px)",
-          },
-          "91%": {
-            transform: "translate(0px, -123px)",
-          },
-          "100%": {
-            transform: "translate(0px, -123px)",
           }
         },
         circle3: {
-          "0%": {
-            transform: "translate(0px, 240px)",
+          "0%, 1%, 91%, 100%": {
+            transform: "translate(0px, 136px)",
           },
-          "1%": {
-            transform: "translate(0px, 240px)",
-          },
-          "40%": {
+          "40%, 60%": {
             transform: "translate(0px, 0px)",
-          },
-          "60%": {
-            transform: "translate(0px, 0px)",
-          },
-          "91%": {
-            transform: "translate(0px, 240px)",
-          },
-          "100%": {
-            transform: "translate(0px, 240px)",
           }
         },
         circle4: {
-          "0%": {
-            transform: "translate(0px, -720px)",
+          "0%, 1%, 91%, 100%": {
+            transform: "translate(0px, -203px)",
           },
-          "1%": {
-            transform: "translate(0px, -720px)",
-          },
-          "40%": {
+          "40%, 60%": {
             transform: "translate(0px, 0px)",
-          },
-          "60%": {
-            transform: "translate(0px, 0px)",
-          },
-          "91%": {
-            transform: "translate(0px, -720px)",
-          },
-          "100%": {
-            transform: "translate(0px, -720px)",
           }
         },
         circle5: {
-          "0%": {
-            transform: "translate(0px, 480px)",
+          "0%, 1%, 91%, 100%": {
+            transform: "translate(0px, -43px)",
           },
-          "1%": {
-            transform: "translate(0px, 480px)",
-          },
-          "40%": {
+          "40%, 60%": {
             transform: "translate(0px, 0px)",
-          },
-          "60%": {
-            transform: "translate(0px, 0px)",
-          },
-          "91%": {
-            transform: "translate(0px, 480px)",
-          },
-          "100%": {
-            transform: "translate(0px, 480px)",
           }
         },
         circle6: {
-          "0%": {
-            transform: "translate(0px, 980px)",
+          "0%, 1%, 91%, 100%": {
+            transform: "translate(0px, 98px)",
           },
-          "1%": {
-            transform: "translate(0px, 980px)",
-          },
-          "40%": {
+          "40%, 60%": {
             transform: "translate(0px, 0px)",
-          },
-          "60%": {
-            transform: "translate(0px, 0px)",
-          },
-          "91%": {
-            transform: "translate(0px, 980px)",
-          },
-          "100%": {
-            transform: "translate(0px, 980px)",
           }
         },
         circle7: {
-          "0%": {
-            transform: "translate(0px, -480px)",
+          "0%, 1%, 91%, 100%": {
+            transform: "translate(0px, -74px)",
           },
-          "1%": {
-            transform: "translate(0px, -480px)",
-          },
-          "40%": {
+          "40%, 60%": {
             transform: "translate(0px, 0px)",
-          },
-          "60%": {
-            transform: "translate(0px, 0px)",
-          },
-          "91%": {
-            transform: "translate(0px, -480px)",
-          },
-          "100%": {
-            transform: "translate(0px, -480px)",
           }
         },
         circle8: {
-          "0%": {
-            transform: "translate(0px, -120px)",
+          "0%, 1%, 91%, 100%": {
+            transform: "translate(0px, 54px)",
           },
-          "1%": {
-            transform: "translate(0px, -120px)",
-          },
-          "40%": {
+          "40%, 60%": {
             transform: "translate(0px, 0px)",
-          },
-          "60%": {
-            transform: "translate(0px, 0px)",
-          },
-          "91%": {
-            transform: "translate(0px, -120px)",
-          },
-          "100%": {
-            transform: "translate(0px, -120px)",
           }
         }
       },
