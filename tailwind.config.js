@@ -87,72 +87,7 @@ module.exports = {
             transform: "scale(1.05)",
           }
         },
-        circle: {
-          "0%, 1%, 91%, 100%": {
-            transform: "translate(0px, -75px)",
-          },
-          "40%, 60%": {
-            transform: "translate(0px, 0px)",
-          }
-        },
-        circle2: {
-          "0%, 1%, 91%, 100%": {
-            transform: "translate(0px, -35px)",
-          },
-          "40%, 60%": {
-            transform: "translate(0px, 0px)",
-          }
-        },
-        circle3: {
-          "0%, 1%, 91%, 100%": {
-            transform: "translate(0px, 136px)",
-          },
-          "40%, 60%": {
-            transform: "translate(0px, 0px)",
-          }
-        },
-        circle4: {
-          "0%, 1%, 91%, 100%": {
-            transform: "translate(0px, -203px)",
-          },
-          "40%, 60%": {
-            transform: "translate(0px, 0px)",
-          }
-        },
-        circle5: {
-          "0%, 1%, 91%, 100%": {
-            transform: "translate(0px, -43px)",
-          },
-          "40%, 60%": {
-            transform: "translate(0px, 0px)",
-          }
-        },
-        circle6: {
-          "0%, 1%, 91%, 100%": {
-            transform: "translate(0px, 98px)",
-          },
-          "40%, 60%": {
-            transform: "translate(0px, 0px)",
-          }
-        },
-        circle7: {
-          "0%, 1%, 91%, 100%": {
-            transform: "translate(0px, -74px)",
-          },
-          "40%, 60%": {
-            transform: "translate(0px, 0px)",
-          }
-        },
-        circle8: {
-          "0%, 1%, 91%, 100%": {
-            transform: "translate(0px, 54px)",
-          },
-          "40%, 60%": {
-            transform: "translate(0px, 0px)",
-          }
-        }
-      },
-      backgroundImage: theme => ({})
+      }
     }
   },
   plugins: [
