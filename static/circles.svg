@@ -1,0 +1,269 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="circles" viewBox="0 0 1800 1800">
+  <circle class="circle circle1" cx="900" cy="900" r="852" />
+
+  <circle class="circle circle2" cx="900" cy="900" r="756" />
+
+  <circle class="circle circle3" cx="900" cy="900" r="660" />
+
+  <circle class="circle circle4" cx="900" cy="900" r="568" />
+
+  <circle class="circle circle5" cx="900" cy="900" r="472" />
+
+  <circle class="circle circle6" cx="900" cy="900" r="378" />
+
+  <circle class="circle circle7" cx="900" cy="900" r="280" />
+
+  <circle class="circle circle8" cx="900" cy="900" r="188" />
+
+  <style>
+    .circle {
+      stroke: white;
+      fill: none;
+      stroke-opacity: 0.2;
+
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+
+    .circle1 {
+      animation-name: c1;
+    }
+
+    .circle2 {
+      animation-name: c2;
+    }
+
+    .circle3 {
+      animation-name: c3;
+    }
+
+    .circle4 {
+      animation-name: c4;
+    }
+
+    .circle5 {
+      animation-name: c5;
+    }
+
+    .circle6 {
+      animation-name: c6;
+    }
+
+    .circle7 {
+      animation-name: c7;
+    }
+
+    .circle8 {
+      animation-name: c8;
+    }
+
+    @keyframes c1 {
+      0% {
+        transform: translate(0px, 56px);
+      }
+
+      1% {
+        transform: translate(0px, 56px);
+      }
+
+      40% {
+        transform: translate(0px, 0px);
+      }
+
+      60% {
+        transform: translate(0px, 0px);
+      }
+
+      91% {
+        transform: translate(0px, 56px);
+      }
+
+      100% {
+        transform: translate(0px, 56px);
+      }
+    }
+
+    @keyframes c2 {
+      0% {
+        transform: translate(0px, -123px);
+      }
+
+      1% {
+        transform: translate(0px, -123px);
+      }
+
+      40% {
+        transform: translate(0px, 0px);
+      }
+
+      60% {
+        transform: translate(0px, 0px);
+      }
+
+      91% {
+        transform: translate(0px, -123px);
+      }
+
+      100% {
+        transform: translate(0px, -123px);
+      }
+    }
+
+    @keyframes c3 {
+      0% {
+        transform: translate(0px, 240px);
+      }
+
+      1% {
+        transform: translate(0px, 240px);
+      }
+
+      40% {
+        transform: translate(0px, 0px);
+      }
+
+      60% {
+        transform: translate(0px, 0px);
+      }
+
+      91% {
+        transform: translate(0px, 240px);
+      }
+
+      100% {
+        transform: translate(0px, 240px);
+      }
+    }
+
+    @keyframes c4 {
+      0% {
+        transform: translate(0px, -720px);
+      }
+
+      1% {
+        transform: translate(0px, -720px);
+      }
+
+      40% {
+        transform: translate(0px, 0px);
+      }
+
+      60% {
+        transform: translate(0px, 0px);
+      }
+
+      91% {
+        transform: translate(0px, -720px);
+      }
+
+      100% {
+        transform: translate(0px, -720px);
+      }
+    }
+
+    @keyframes c5 {
+      0% {
+        transform: translate(0px, 480px);
+      }
+
+      1% {
+        transform: translate(0px, 480px);
+      }
+
+      40% {
+        transform: translate(0px, 0px);
+      }
+
+      60% {
+        transform: translate(0px, 0px);
+      }
+
+      91% {
+        transform: translate(0px, 480px);
+      }
+
+      100% {
+        transform: translate(0px, 480px);
+      }
+    }
+
+    @keyframes c6 {
+      0% {
+        transform: translate(0px, 980px);
+      }
+
+      1% {
+        transform: translate(0px, 980px);
+      }
+
+      40% {
+        transform: translate(0px, 0px);
+      }
+
+      60% {
+        transform: translate(0px, 0px);
+      }
+
+      91% {
+        transform: translate(0px, 980px);
+      }
+
+      100% {
+        transform: translate(0px, 980px);
+      }
+    }
+
+    @keyframes c7 {
+      0% {
+        transform: translate(0px, -480px);
+      }
+
+      1% {
+        transform: translate(0px, -480px);
+      }
+
+      40% {
+        transform: translate(0px, 0px);
+      }
+
+      60% {
+        transform: translate(0px, 0px);
+      }
+
+      91% {
+        transform: translate(0px, -480px);
+      }
+
+      100% {
+        transform: translate(0px, -480px);
+      }
+    }
+
+    @keyframes c8 {
+      0% {
+        transform: translate(0px, -120px);
+      }
+
+      1% {
+        transform: translate(0px, -120px);
+      }
+
+      40% {
+        transform: translate(0px, 0px);
+      }
+
+      60% {
+        transform: translate(0px, 0px);
+      }
+
+      91% {
+        transform: translate(0px, -120px);
+      }
+
+      100% {
+        transform: translate(0px, -120px);
+      }
+    }
+  </style>
+</svg>

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative circles-container bg-no-repeat bg-top bg-900">
     <div class="absolute w-full flex h-32">
       <div
         class="
@@ -14,183 +14,6 @@
           opacity-60
         "
       ></div>
-    </div>
-
-    <div
-      class="
-        absolute
-        w-full
-        flex
-        justify-center
-        circles-container
-        transform
-        animate-circle
-      "
-    >
-      <svg class="circles" viewBox="0 0 1800 1800">
-        <circle
-          stroke="white"
-          fill="none"
-          stroke-opacity="0.2"
-          cx="900"
-          cy="900"
-          r="852"
-        />
-      </svg>
-    </div>
-    <div
-      class="
-        absolute
-        w-full
-        flex
-        justify-center
-        circles-container
-        transform
-        animate-circle2
-      "
-    >
-      <svg class="circles" viewBox="0 0 1800 1800">
-        <circle
-          stroke="white"
-          fill="none"
-          stroke-opacity="0.2"
-          cx="900"
-          cy="900"
-          r="756"
-        />
-      </svg>
-    </div>
-    <div
-      class="
-        absolute
-        w-full
-        flex
-        justify-center
-        circles-container
-        transform
-        animate-circle3
-      "
-    >
-      <svg class="circles" viewBox="0 0 1800 1800">
-        <circle
-          stroke="white"
-          fill="none"
-          stroke-opacity="0.2"
-          cx="900"
-          cy="900"
-          r="660"
-        />
-      </svg>
-    </div>
-    <div
-      class="
-        absolute
-        w-full
-        flex
-        justify-center
-        circles-container
-        transform
-        animate-circle4
-      "
-    >
-      <svg class="circles" viewBox="0 0 1800 1800">
-        <circle
-          stroke="white"
-          fill="none"
-          stroke-opacity="0.2"
-          cx="900"
-          cy="900"
-          r="568"
-        />
-      </svg>
-    </div>
-    <div
-      class="
-        absolute
-        w-full
-        flex
-        justify-center
-        circles-container
-        transform
-        animate-circle5
-      "
-    >
-      <svg class="circles" viewBox="0 0 1800 1800">
-        <circle
-          stroke="white"
-          fill="none"
-          stroke-opacity="0.2"
-          cx="900"
-          cy="900"
-          r="472"
-        />
-      </svg>
-    </div>
-    <div
-      class="
-        absolute
-        w-full
-        flex
-        justify-center
-        circles-container
-        transform
-        animate-circle6
-      "
-    >
-      <svg class="circles" viewBox="0 0 1800 1800">
-        <circle
-          stroke="white"
-          fill="none"
-          stroke-opacity="0.2"
-          cx="900"
-          cy="900"
-          r="378"
-        />
-      </svg>
-    </div>
-    <div
-      class="
-        absolute
-        w-full
-        flex
-        justify-center
-        circles-container
-        transform
-        animate-circle7
-      "
-    >
-      <svg class="circles" viewBox="0 0 1800 1800">
-        <circle
-          stroke="white"
-          fill="none"
-          stroke-opacity="0.2"
-          cx="900"
-          cy="900"
-          r="280"
-        />
-      </svg>
-    </div>
-    <div
-      class="
-        absolute
-        w-full
-        flex
-        justify-center
-        circles-container
-        transform
-        animate-circle8
-      "
-    >
-      <svg class="circles" viewBox="0 0 1800 1800">
-        <circle
-          stroke="white"
-          fill="none"
-          stroke-opacity="0.2"
-          cx="900"
-          cy="900"
-          r="188"
-        />
-      </svg>
     </div>
 
     <header
@@ -247,8 +70,6 @@ export default {
 </script>
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -256,6 +77,39 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: UntitledSans;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('~assets/fonts/untitled-sans/UntitledSans-Regular.ttf')
+      format('truetype'),
+    url('~assets/fonts/untitled-sans/UntitledSans-Regular.woff2?3.13')
+      format('woff2');
+}
+
+@font-face {
+  font-family: UntitledSans;
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url('~assets/fonts/untitled-sans/UntitledSans-RegularItalic.ttf')
+      format('truetype'),
+    url('~assets/fonts/untitled-sans/UntitledSans-RegularItalic.woff2?3.13')
+      format('woff2');
+}
+
+@font-face {
+  font-family: UntitledSans;
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url('~assets/fonts/untitled-sans/UntitledSans-Bold.ttf')
+      format('truetype'),
+    url('~assets/fonts/untitled-sans/UntitledSans-Bold.woff2?3.13')
+      format('woff2');
 }
 
 *,
@@ -269,7 +123,7 @@ html {
   filter: blur(100px);
 }
 .circles-container {
-  top: -120px;
+  background-image: url('/circles.svg');
 }
 .circles {
   width: 900px;
