@@ -4,17 +4,7 @@
   >
     <div class="absolute w-full flex h-32">
       <div
-        class="
-          w-full
-          flex-grow
-          bg-gradient-to-r
-          from-hero-100
-          via-hero-500
-          to-hero-900
-          h-32
-          top-blur
-          opacity-60
-        "
+        class="w-full flex-grow bg-gradient-to-r from-hero-100 via-hero-500 to-hero-900 h-32 top-blur opacity-60"
       ></div>
     </div>
 

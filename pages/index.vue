@@ -28,7 +28,7 @@
                 </span>
               </span>
               <button type="submit"
-                class="text-indigo-400 pl-2 lg:pl-4 group-hover:text-gray-100 focus-within:text-gray-100 outline-none hover:cursor-pointer transition duration-200">Register
+                class="text-indigo-400 pl-2 lg:pl-4 group-hover:text-gray-100 focus-within:text-gray-100 outline-none hover:cursor-pointer transition duration-200 leading-loose">Register
                 &rarr;</button>
             </div>
           </div>
