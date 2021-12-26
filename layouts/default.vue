@@ -1,5 +1,7 @@
 <template>
-  <div class="relative circles-container bg-no-repeat bg-top bg-900">
+  <div
+    class="relative circles-container bg-no-repeat bg-top bg-900 min-h-screen"
+  >
     <div class="absolute w-full flex h-32">
       <div
         class="
