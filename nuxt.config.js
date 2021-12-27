@@ -37,7 +37,7 @@ export default {
   },
 
   env: {
-    RULEBOX_WEB_API_URL: process.env.RULEBOX_WEB_API_URL || "http://localhost:9999/.netlify/functions"
+    RBX_WEB_API_URL: process.env.RULEBOX_WEB_API_URL || "http://localhost:9999/.netlify/functions"
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

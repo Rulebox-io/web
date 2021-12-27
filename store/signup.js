@@ -36,7 +36,7 @@ export const actions = {
    */
   async signup(ctx, payload) {
 
-    const url = `${process.env.RULEBOX_WEB_API_URL}/signup`
+    const url = `${process.env.RBX_WEB_API_URL}/signup`
     const body = { email: payload }
 
     ctx.commit("setSignupState", 'signing-up')
