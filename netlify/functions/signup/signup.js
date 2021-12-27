@@ -13,6 +13,9 @@ const CONVERTKIT_SEQUENCE_ID = process.env.CONVERTKIT_SEQUENCE_ID
 
 // eslint-disable-next-line require-await
 const handler = async (event) => {
+
+  console.log(`${event.httpMethod} /signup`)
+
   try {
     switch (event.httpMethod) {
       case "OPTIONS": { return { statusCode: 200, headers } }
@@ -23,6 +26,8 @@ const handler = async (event) => {
         const payload = JSON.parse(event.body)
         if (!payload.email) { return { statusCode: 400, headers, body: "Missing `Email` field." } }
 
+        console.log(`Signing up ${payload.email}`)
+
         // Sign the user up using ConvertKit...
         const result = await new ConvertKitClient(CONVERTKIT_API_KEY).addSubscriberToSequence(payload.email, CONVERTKIT_SEQUENCE_ID)
 
@@ -30,18 +35,21 @@ const handler = async (event) => {
           case "ok":
             return {
               statusCode: 200,
+              headers,
               body: JSON.stringify({ status: "ok" }),
             }
 
           case "bad_request":
             return {
               statusCode: 400,
+              headers,
               body: JSON.stringify(result),
             }
 
           default:
             return {
               statusCode: 500,
+              headers,
               body: JSON.stringify(result),
             }
         }

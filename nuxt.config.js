@@ -36,6 +36,10 @@ export default {
     port: "3033"
   },
 
+  env: {
+    RULEBOX_WEB_API_URL: process.env.RULEBOX_WEB_API_URL || "http://localhost:9999/.netlify/functions"
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/css/tailwind.css',

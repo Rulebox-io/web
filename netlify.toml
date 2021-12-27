@@ -1,2 +1,2 @@
 [build]
-  environment = { CONVERTKIT_API_KEY="z5kOvp8tCRddx0idXIKHfA", CONVERTKIT_SEQUENCE_ID="1025766" }
+  environment = { RULEBOX_WEB_API_URL="http://localhost:9999/.netlify/functions", CONVERTKIT_API_KEY="z5kOvp8tCRddx0idXIKHfA", CONVERTKIT_SEQUENCE_ID="1025766" }

@@ -1,10 +1,23 @@
 <template>
   <div
-    class="relative circles-container bg-no-repeat bg-top bg-900 min-h-screen"
+    :class="[
+      'relative circles-container bg-no-repeat bg-top bg-900 min-h-screen',
+      hasSignedUp ? 'converging' : '',
+    ]"
   >
     <div class="absolute w-full flex h-32">
       <div
-        class="w-full flex-grow bg-gradient-to-r from-hero-100 via-hero-500 to-hero-900 h-32 top-blur opacity-60"
+        class="
+          w-full
+          flex-grow
+          bg-gradient-to-r
+          from-hero-100
+          via-hero-500
+          to-hero-900
+          h-32
+          top-blur
+          opacity-60
+        "
       ></div>
     </div>
 
@@ -19,17 +32,6 @@
           Rulebox
         </span>
       </nuxt-link>
-      <!-- <span class="md:flex items-center space-x-12 hidden">
-        <nuxt-link to="#">
-          <span class="text-white text-sm">Changelog</span>
-        </nuxt-link>
-        <nuxt-link to="#">
-          <span class="text-white text-sm">About us</span>
-        </nuxt-link>
-        <nuxt-link to="#">
-          <span class="text-white text-sm">We're hiring</span>
-        </nuxt-link>
-      </span> -->
       <a
         href="https://twitter.com/rulebox_io"
         target="_blank"
@@ -38,13 +40,6 @@
         <span class="sr-only">Twitter</span>
         <Twitter></Twitter>
       </a>
-      <!-- <nuxt-link to="#">
-        <button
-          class="text-white py-1 px-6 border text-sm rounded-full bg-white bg-opacity-10 border-opacity-50"
-        >
-          Login
-        </button>
-      </nuxt-link> -->
     </header>
     <nuxt />
     <Footer />
@@ -64,6 +59,11 @@ export default {
     bodyAttrs: {},
     htmlAttrs: {
       class: 'bg-black',
+    },
+  },
+  computed: {
+    hasSignedUp() {
+      return this.$store.getters['signup/hasSignedUp']
     },
   },
 }
@@ -124,6 +124,9 @@ html {
 }
 .circles-container {
   background-image: url('/circles.svg');
+}
+.circles-container.converging {
+  background-image: url('/circles-converging.svg');
 }
 .circles {
   width: 900px;
