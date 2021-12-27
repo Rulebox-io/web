@@ -1,4 +1,6 @@
 
+const ConvertKitClient = require("../../../service/convert-kit")
+
 const headers = {
   'Access-Control-Allow-Credentials': 'true',
   'Access-Control-Allow-Origin': 'http://localhost:3033',
@@ -6,6 +8,10 @@ const headers = {
   'Access-Control-Allow-Methods': 'POST'
 };
 
+const CONVERTKIT_API_KEY = process.env.CONVERTKIT_API_KEY
+const CONVERTKIT_SEQUENCE_ID = process.env.CONVERTKIT_SEQUENCE_ID
+
+// eslint-disable-next-line require-await
 const handler = async (event) => {
   try {
     switch (event.httpMethod) {
@@ -18,11 +24,26 @@ const handler = async (event) => {
         if (!payload.email) { return { statusCode: 400, headers, body: "Missing `Email` field." } }
 
         // Sign the user up using ConvertKit...
+        const result = await new ConvertKitClient(CONVERTKIT_API_KEY).addSubscriberToSequence(payload.email, CONVERTKIT_SEQUENCE_ID)
 
-        // Return the user.
-        return {
-          statusCode: 200,
-          body: JSON.stringify(payload.email),
+        switch (result.status) {
+          case "ok":
+            return {
+              statusCode: 200,
+              body: JSON.stringify({ status: "ok" }),
+            }
+
+          case "bad_request":
+            return {
+              statusCode: 400,
+              body: JSON.stringify(result),
+            }
+
+          default:
+            return {
+              statusCode: 500,
+              body: JSON.stringify(result),
+            }
         }
       }
 
