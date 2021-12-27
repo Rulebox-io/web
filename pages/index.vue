@@ -16,7 +16,7 @@
               :class="[
                 'absolute -inset-1 rounded-lg blur-lg opacity-75 group-hover:opacity-100 group-hover:blur-md transition duration-1000 group-hover:duration-500 animate-glow',
                 hasSignedUp
-                  ? 'bg-purple-700' 
+                  ? 'bg-purple-700 blur-sm' 
                   : 'bg-gradient-to-r from-purple-700 to-cyan-400'
               ]"
               >
@@ -30,7 +30,7 @@
               ]"
               >
             </div>
-            <div class="relative px-5 py-2.5 bg-black rounded-lg leading-none flex items-center opacity-75 text-lg">
+            <div class="relative px-5 py-2.5 bg-black rounded-lg leading-none flex items-center opacity-100 text-lg transition duration-200">
               <span v-if="hasSignedUp" class="font-bold text-gray-100 text-base py-3">
                 Success! We will notify you as soon as we open up more spaces.
               </span>
