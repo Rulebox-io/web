@@ -87,6 +87,14 @@ module.exports = {
             transform: "scale(1.05)",
           }
         },
+      },
+      inset: {
+        "-1/4": "-25%",
+        "-1/2": "-50%"
+      },
+
+      spacing: {
+        "oversize": "150%"
       }
     }
   },

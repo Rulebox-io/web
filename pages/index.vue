@@ -1,17 +1,17 @@
 <template>
   <main>
-    <div class="relative max-w-7xl ml-auto mr-auto text-center mt-24 md:mt-32">
-      <h1 class="lg:text-6xl md:text-4xl text-3xl text-white font-bold my-2 leading-none select-none">
+    <div class="relative max-w-5xl ml-auto mr-auto text-center mt-20 md:mt-32">
+      <h1 class="lg:text-6xl md:text-4xl text-3xl text-white font-bold my-2 leading-8 select-none">
         Rule management<br />
         for your whole team.
       </h1>
-      <h2 class="lg:text-xl text-md text-gray-300 my-4 select-none">
+      <h2 class="lg:text-xl text-md text-gray-300 my-4 leading-5 select-none">
         Create, maintain and run rulesets with a<br />
         single user-friendly interface.
       </h2>
       <form @submit.prevent="signup">
-        <div class="flex justify-around mt-12">
-          <div class="relative group">
+        <div class="px-8 lg:px-0 flex justify-around mt-12">
+          <div class="max-w-full relative group">
             <div
               :class="[
                 'absolute -inset-1 rounded-lg blur-lg opacity-75 group-hover:opacity-100 group-hover:blur-md transition duration-1000 group-hover:duration-500 animate-glow',
@@ -30,26 +30,24 @@
               ]"
               >
             </div>
-            <div class="relative px-5 py-2.5 bg-black rounded-lg leading-none flex items-center opacity-75 text-lg">
+            <div class="relative px-4 py-2.5 bg-black rounded-lg leading-none flex items-center text-base lg:text-lg space-x-2">
               <span v-if="hasSignedUp" class="font-bold text-gray-100 text-base py-3">
                 Success! We will notify you as soon as we open up more spaces.
               </span>
-              <span v-if="!hasSignedUp" class="flex items-center space-x-2">
-                <Mail></Mail>
-                <span class="text-gray-100 pr-2 lg:pr-4">
-                  <input ref="register" v-model="emailAddress" required class="bg-black border-none appearance-none flex-grow leading-relaxed outline-none" type="email" 
-                    autocomplete="email" placeholder="hello@rulebox.io">
-                  </input>
-                </span>
-              </span>
+              <Mail v-if="!hasSignedUp"></Mail>
+              <input v-if="!hasSignedUp" ref="register" v-model="emailAddress" required class="min-w-0 text-gray-100 pr-2 lg:pr-4 bg-black border-none appearance-none flex-grow leading-relaxed outline-none" type="email" 
+                autocomplete="email" placeholder="hello@rulebox.io">
+              </input>
               <button v-if="!hasSignedUp" type="submit"
-                class="text-indigo-400 pl-2 lg:pl-4 group-hover:text-gray-100 focus-within:text-gray-100 outline-none hover:cursor-pointer transition duration-200 leading-loose">Register
-                &rarr;</button>
+                class="whitespace-nowrap text-indigo-400 pl-2 lg:pl-4 group-hover:text-gray-100 focus-within:text-gray-100 outline-none hover:cursor-pointer transition duration-200 leading-loose">
+                <span class="hidden lg:inline">Register</span>
+                <span class="text-2xl">&rarr;</span>
+              </button>
             </div>
           </div>
         </div>
       </form>
-      <p class="font-sans text-gray-400 my-8 text-base select-none">
+      <p class="font-sans text-gray-400 my-12 lg:my-8 text-sm lg:text-base select-none">
         Get notified when we go live. No spam, ever.
       </p>
     </div>
