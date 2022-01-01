@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[
-      'relative circles-container bg-no-repeat bg-top bg-contain lg:bg-900 min-h-screen',
+      'relative circles-container bg-no-repeat bg-top bg-contain lg:bg-900 overflow-x-hidden min-h-screen',
       hasSignedUp ? 'converging' : '',
     ]"
   >
