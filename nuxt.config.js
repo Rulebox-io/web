@@ -18,11 +18,38 @@ export default {
     {
       hid: 'description',
       name: 'description',
-      content: 'Rule management, for your whole team. Register now for Beta access.'
+      content: 'The SaaS solution for business rules. Register now to be informed when we launch.'
     },
     {
       name: 'format-detection',
       content: 'telephone=no'
+    },
+    {
+      name: "og:title", content: "Rulebox.io | The SaaS solution for business rules"
+    },
+    {
+      name: "og:description", content: "No more hard-coded business rules. Author, test, execute and audit with Rulebox. Register now to be informed when we launch."
+    },
+    {
+      name: "og:type", content: "website"
+    },
+    {
+      name: "og:url", content: "https://rulebox.io"
+    },
+    {
+      name: "og:image", content: "https://rulebox.io/rb-og-image.jpg"
+    },
+    {
+      name: "twitter:title", content: "Rulebox.io | The SaaS solution for business rules"
+    },
+    {
+      name: "twitter:description", content: "No more hard-coded business rules. Author, test, execute and audit with Rulebox. Register now to be informed when we launch."
+    },
+    {
+      name: "twitter:url", content: "https://rulebox.io"
+    },
+    {
+      name: "twitter:image", content: "https://rulebox.io/rb-og-image.jpg"
     }
     ],
     link: [{

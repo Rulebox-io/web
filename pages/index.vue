@@ -2,12 +2,12 @@
   <main>
     <div class="relative max-w-5xl ml-auto mr-auto text-center mt-20 md:mt-32">
       <h1 class="lg:text-6xl md:text-4xl text-3xl text-white font-bold my-2 leading-8 select-none">
-        Rule management<br />
-        for your whole team.
+        The SaaS solution<br />
+        for business rules.
       </h1>
       <h2 class="lg:text-xl text-md text-gray-300 my-4 leading-5 select-none">
-        Create, maintain and run rulesets with a<br />
-        single user-friendly interface.
+        No more hard-coded business rules.<br />
+        Author, test, execute and audit with Rulebox.
       </h2>
       <form @submit.prevent="signup">
         <div class="px-8 lg:px-0 flex justify-around mt-12">
