@@ -48,7 +48,7 @@
         </div>
       </form>
       <p class="font-sans text-gray-400 my-12 lg:my-8 text-sm lg:text-base select-none">
-        Get notified when we go live. No spam, ever.
+        Register for updates. Get notified when we go live.<br/>No spam, ever.
       </p>
     </div>
   </main>
