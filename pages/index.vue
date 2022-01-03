@@ -39,8 +39,8 @@
                 autocomplete="email" placeholder="hello@rulebox.io">
               </input>
               <button v-if="!hasSignedUp" type="submit"
-                class="whitespace-nowrap text-indigo-400 pl-2 lg:pl-4 group-hover:text-gray-100 focus-within:text-gray-100 outline-none hover:cursor-pointer transition duration-200 leading-loose">
-                <span class="hidden lg:inline">Register</span>
+                class="whitespace-nowrap flex items-center text-indigo-400 pl-2 lg:pl-4 group-hover:text-gray-100 focus-within:text-gray-100 outline-none hover:cursor-pointer transition duration-200 leading-loose">
+                <span class="hidden lg:inline lg:mr-2">Register</span>
                 <span class="text-2xl">&rarr;</span>
               </button>
             </div>
