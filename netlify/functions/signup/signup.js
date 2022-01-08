@@ -1,5 +1,6 @@
 
-const ConvertKitClient = require("../../../service/convert-kit")
+// const ConvertKitClient = require("../../../service/convert-kit")
+const MailChimpClient = require("../../../service/mailchimp")
 
 const headers = {
   'Access-Control-Allow-Credentials': 'true',
@@ -8,8 +9,11 @@ const headers = {
   'Access-Control-Allow-Methods': 'POST'
 };
 
-const CONVERTKIT_API_KEY = process.env.CONVERTKIT_API_KEY
-const CONVERTKIT_SEQUENCE_ID = process.env.CONVERTKIT_SEQUENCE_ID
+// const CONVERTKIT_API_KEY = process.env.CONVERTKIT_API_KEY
+// const CONVERTKIT_SEQUENCE_ID = process.env.CONVERTKIT_SEQUENCE_ID
+const MAILCHIMP_API_KEY = process.env.MAILCHIMP_API_KEY
+const MAILCHIMP_SERVER = process.env.MAILCHIMP_SERVER
+const MAILCHIMP_AUDIENCE = process.env.MAILCHIMP_AUDIENCE_ID
 
 // eslint-disable-next-line require-await
 const handler = async (event) => {
@@ -29,7 +33,8 @@ const handler = async (event) => {
         console.log(`Signing up ${payload.email}`)
 
         // Sign the user up using ConvertKit...
-        const result = await new ConvertKitClient(CONVERTKIT_API_KEY).addSubscriberToSequence(payload.email, CONVERTKIT_SEQUENCE_ID)
+        const result = await new MailChimpClient(MAILCHIMP_API_KEY, MAILCHIMP_SERVER).addSubscriberToAudience(payload.email, MAILCHIMP_AUDIENCE)
+        // const result = await new ConvertKitClient(CONVERTKIT_API_KEY).addSubscriberToSequence(payload.email, CONVERTKIT_SEQUENCE_ID)
 
         switch (result.status) {
           case "ok":
