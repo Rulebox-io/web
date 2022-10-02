@@ -1,2 +1,0 @@
-[build]
-  environment = { MAILCHIMP_API_KEY="2e5b8dd4b1a9f5f110f63bf95a803722-us20", MAILCHIMP_SERVER="us20", MAILCHIMP_AUDIENCE_ID="45ecdd0c30" }
